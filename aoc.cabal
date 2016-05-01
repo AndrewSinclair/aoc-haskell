@@ -16,18 +16,7 @@ test-suite spec
     base >= 4.7 && < 5
     ,hspec >= 1.11
     ,QuickCheck
-    ,text
-    ,containers
-    ,pureMD5
-    ,bytestring
-    ,regex-compat
-    ,split
-    ,multimap
-    ,aeson
-    ,unordered-containers
-    ,scientific
-    ,vector
-    ,multiset
+    ,MD5
   hs-source-dirs:
     test
     src
