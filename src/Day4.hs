@@ -1,13 +1,11 @@
 module Day4 where
 
 import Data.Hash.MD5
+import Data.List
 
-mineAdvent input n = 
-  case findHash of
-   | Just val -> val
-   | Nothing -> -1
+mineAdvent input n = findHash
   where
-    findHash = find $ hasPadding . md5s . doConcat $ [1..]
-    hasPadding = n == length $ takeWhile (== "0")
-    doConcat i = input ++ show i
+    findHash = find  (hasPadding . md5s . doConcat) [1..]
+    hasPadding str = n == (length $ takeWhile (== '0') str)
+    doConcat i = Str (input ++ show i)
 

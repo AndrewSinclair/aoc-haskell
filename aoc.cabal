@@ -16,7 +16,7 @@ test-suite spec
     base >= 4.7 && < 5
     ,hspec >= 1.11
     ,QuickCheck
-    ,MD5
+    ,MissingH
   hs-source-dirs:
     test
     src

@@ -20,9 +20,9 @@ spec = do
 
   describe "Trying to do part 1" $ do
     it "will mine the adventcoins at the correct difficulty of 5" $ do
-      mineAdvent input 5 `shouldBe` 282749
+      mineAdvent input 5 `shouldBe` Just 282749
 
-  describe "Tring to do part 2" $ do
+  describe "Trying to do part 2" $ do
     it "will mine the adventcoins at the correct difficulty of 6" $ do
-      mineAdvent input 6 `shouldBe` 9962624
+      mineAdvent input 6 `shouldBe` Just 9962624
 
